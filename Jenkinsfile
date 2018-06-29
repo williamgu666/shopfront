@@ -13,7 +13,10 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'cd functional-e2e-tests && mvn clean verify' 
+	      def mvn_version = 'apache-maven-3.5.3'
+		  withEnv( ["PATH+MAVEN=${tool mvn_version}/bin"] ) {
+			sh 'cd functional-e2e-tests && mvn clean verify' 
+		  }
       }
     }
   }
