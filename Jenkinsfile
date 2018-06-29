@@ -8,7 +8,12 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'ls' 
+        sh 'ls'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'cd functional-e2e-tests && mvn clean verify' 
       }
     }
   }
