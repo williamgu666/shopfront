@@ -9,6 +9,7 @@ pipeline {
     stage('Build') {
       steps { 
         sh 'pwd && mvn --version'
+        sh 'cd shopfront && mvn clean install'
       }
     }
     stage('Test') {
