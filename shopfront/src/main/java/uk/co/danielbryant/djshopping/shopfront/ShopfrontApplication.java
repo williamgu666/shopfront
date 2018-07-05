@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 public class ShopfrontApplication {
 	// main function
     public static void main(String[] args) {
-        SpringApplication.ran(ShopfrontApplication.class, args);
+        SpringApplication.run(ShopfrontApplication.class, args);
     }
 
     @Bean(name = "stdRestTemplate")
