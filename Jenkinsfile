@@ -15,7 +15,7 @@ pipeline {
     }
     stage('Test') {
       steps { 
-        sh 'lsd -a'
+        sh 'ls -a'
       }
     }
   }
