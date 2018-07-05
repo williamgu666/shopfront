@@ -1,3 +1,4 @@
+pwd
 cd shopfront
 /usr/local/src/apache-maven/bin/mvn clean install
 cd ..
