@@ -1,12 +1,9 @@
-#!/bin/bash
-
 cd shopfront
-mvn clean install
+/usr/local/src/apache-maven/bin/mvn clean install
 cd ..
 cd productcatalogue
-mvn clean install
+/usr/local/src/apache-maven/bin/mvn clean install
 cd ..
 cd stockmanager
-mvn clean install
+/usr/local/src/apache-maven/bin/mvn clean install
 cd ..
-
