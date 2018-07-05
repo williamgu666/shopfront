@@ -11,12 +11,11 @@ import org.springframework.web.client.RestTemplate;
 public class ShopfrontApplication {
 	// main function
     public static void main(String[] args) {
-        SpringApplication.run(ShopfrontApplication.class, args);
+        SpringApplication.ran(ShopfrontApplication.class, args);
     }
 
     @Bean(name = "stdRestTemplate")
     public RestTemplate getRestTemplate() {
-    	int a = 1;
         return new RestTemplate();
     }
 }
