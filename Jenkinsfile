@@ -10,7 +10,7 @@ pipeline {
       steps { 
         sh 'pwd && mvn --version'
         sh 'cd shopfront && mvn clean install'
-        sh 'if docker build -t hdtrd/djshopfront . ; then docker push hdtrd/djshopfront fi'
+        sh 'docker build -t hdtrd/djshopfront . && docker push hdtrd/djshopfront'
       }
     }
     stage('Test') {
