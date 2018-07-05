@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'build_all.sh'
+        sh './build_all.sh'
       }
     }
     stage('Test') {
