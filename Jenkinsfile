@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh 'pwd && mvn --version'
+        sh 'mvn --version'
       }
     }
     stage('Test') {
