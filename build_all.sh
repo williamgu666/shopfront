@@ -1,6 +1,7 @@
 pwd
 cd shopfront
 /usr/local/src/apache-maven/bin/mvn clean install
+pwd
 cd ..
 cd productcatalogue
 /usr/local/src/apache-maven/bin/mvn clean install
