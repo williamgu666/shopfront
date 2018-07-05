@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps { 
-        sh '/usr/local/src/apache-maven/bin/mvn --version'
+        sh 'build_all.sh'
       }
     }
     stage('Test') {
